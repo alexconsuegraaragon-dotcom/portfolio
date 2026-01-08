@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Alejandro Consuegra Aragón - Data Analyst Portfolio</title>
+    <meta name="description"
+        content="Portfolio de Alejandro Consuegra, Data Analyst enfocado en el impacto de negocio. Experiencia en Python, SQL, Power BI, y Machine Learning. +500K€ en oportunidades identificadas.">
+    <meta name="keywords"
+        content="Data Analyst, Python, SQL, Power BI, Tableau, Machine Learning, Analytics, Business Intelligence">
+    <meta name="author" content="Alejandro Consuegra Aragón">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Alejandro Consuegra Aragón - Data Analyst Portfolio">
+    <meta property="og:description"
+        content="Analista de Datos con formación científica. Especializado en automatización, visualización y modelado.">
+    <meta property="og:type" content="website">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">AC</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero section">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Hola, soy Alejandro Consuegra</p>
+                <h1 class="hero-title">
+                    <span class="typing-text" id="typingText"></span>
+                </h1>
+                <p class="hero-description">
+                    Analista de Datos con formación de Doctorado y experiencia en Python, SQL y Power BI. Especializado
+                    en transformar grandes volúmenes de datos (+1M registros) en insights estratégicos y en la
+                    automatización de procesos ETL para maximizar la eficiencia.
+                </p>
+                <div class="btn-group">
+                    <a href="#proyectos" class="btn btn-primary">
+                        <i class="fas fa-folder-open"></i> Ver Proyectos
+                    </a>
+                    <a href="#contacto" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contactar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="habilidades" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Experticia Técnica</span>
+                <h2 class="section-title">Habilidades & Herramientas</h2>
+                <p class="section-description">
+                    Stack tecnológico completo para análisis de datos end-to-end
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-badge fade-in-up stagger-1">
+                    <div class="skill-icon">🐍</div>
+                    <div class="skill-name">Python</div>
+                </div>
+                <div class="skill-badge fade-in-up stagger-2">
+                    <div class="skill-icon">🗄️</div>
+                    <div class="skill-name">SQL</div>
+                </div>
+                <div class="skill-badge fade-in-up stagger-3">
+                    <div class="skill-icon">📊</div>
+                    <div class="skill-name">Power BI</div>
+                </div>
+                <div class="skill-badge fade-in-up stagger-4">
+                    <div class="skill-icon">📈</div>
+                    <div class="skill-name">Tableau</div>
+                </div>
+                <div class="skill-badge fade-in-up stagger-5">
+                    <div class="skill-icon">📑</div>
+                    <div class="skill-name">Excel</div>
+                </div>
+                <div class="skill-badge fade-in-up stagger-1">
+                    <div class="skill-icon">🤖</div>
+                    <div class="skill-name">Machine Learning</div>
+                </div>
+                <div class="skill-badge fade-in-up stagger-2">
+                    <div class="skill-icon">⚡</div>
+                    <div class="skill-name">PySpark</div>
+                </div>
+                <div class="skill-badge fade-in-up stagger-3">
+                    <div class="skill-icon">☁️</div>
+                    <div class="skill-name">Azure ML</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <p class="section-description">
+                    Proyectos reales con impacto medible en negocio y eficiencia operativa
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!--Project 1 -->
+                <div class="project-card fade-in-up" onclick="openModal('modal-1')" style="cursor: pointer;">
+                    <div class="project-header">
+                        <div class="project-icon">📊</div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Excel</span>
+                        <span class="project-tag">Analytics</span>
+                    </div>
+                    <h3 class="project-title">Benchmarking de Audiencias</h3>
+                    <p class="project-description">
+                        Análisis competitivo exhaustivo de más de 70 competidores, procesando
+                        3 millones de visitas mensuales para identificar oportunidades de mercado
+                        y optimización de contenido.
+                    </p>
+                    <div class="project-stats">
+                        <div class="project-stat">
+                            <i class="fas fa-database project-stat-icon"></i>
+                            <span>3M visitas</span>
+                        </div>
+                        <div class="project-stat">
+                            <i class="fas fa-users project-stat-icon"></i>
+                            <span>70+ competidores</span>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--glass-border); text-align: center; color: var(--color-accent-tertiary); font-weight: 600;">
+                        Ver detalles <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card fade-in-up" onclick="openModal('modal-2')" style="cursor: pointer;">
+                    <div class="project-header">
+                        <div class="project-icon">💰</div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Tableau</span>
+                        <span class="project-tag">Revenue</span>
+                    </div>
+                    <h3 class="project-title">Dashboard de Rentabilidad</h3>
+                    <p class="project-description">
+                        Análisis de más de 3.000 registros para optimizar métricas clave de
+                        revenue management: ADR (Average Daily Rate) y RevPAR (Revenue Per
+                        Available Room), mejorando la estrategia de pricing.
+                    </p>
+                    <div class="project-stats">
+                        <div class="project-stat">
+                            <i class="fas fa-chart-line project-stat-icon"></i>
+                            <span>ADR & RevPAR</span>
+                        </div>
+                        <div class="project-stat">
+                            <i class="fas fa-database project-stat-icon"></i>
+                            <span>3K registros</span>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--glass-border); text-align: center; color: var(--color-accent-tertiary); font-weight: 600;">
+                        Ver detalles <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card fade-in-up" onclick="openModal('modal-3')" style="cursor: pointer;">
+                    <div class="project-header">
+                        <div class="project-icon">🎯</div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">SQL</span>
+                    </div>
+                    <h3 class="project-title">Sistema Recomendador</h3>
+                    <p class="project-description">
+                        Implementación de análisis Pareto (80/20) y sistema de Cross-Selling
+                        sobre base de datos de +113.000 registros para aumentar ticket medio
+                        y mejorar la experiencia del cliente.
+                    </p>
+                    <div class="project-stats">
+                        <div class="project-stat">
+                            <i class="fas fa-database project-stat-icon"></i>
+                            <span>113K registros</span>
+                        </div>
+                        <div class="project-stat">
+                            <i class="fas fa-lightbulb project-stat-icon"></i>
+                            <span>Pareto 80/20</span>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--glass-border); text-align: center; color: var(--color-accent-tertiary); font-weight: 600;">
+                        Ver detalles <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card fade-in-up" onclick="openModal('modal-4')" style="cursor: pointer;">
+                    <div class="project-header">
+                        <div class="project-icon">📈</div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Power BI</span>
+                        <span class="project-tag">KPIs</span>
+                    </div>
+                    <h3 class="project-title">Inteligencia de Negocio</h3>
+                    <p class="project-description">
+                        Dashboard integral de Business Intelligence analizando +65.000 pedidos,
+                        métricas de rentabilidad y KPIs logísticos para optimizar la cadena
+                        de suministro y toma de decisiones estratégicas.
+                    </p>
+                    <div class="project-stats">
+                        <div class="project-stat">
+                            <i class="fas fa-box project-stat-icon"></i>
+                            <span>65K pedidos</span>
+                        </div>
+                        <div class="project-stat">
+                            <i class="fas fa-truck project-stat-icon"></i>
+                            <span>Logística</span>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--glass-border); text-align: center; color: var(--color-accent-tertiary); font-weight: 600;">
+                        Ver detalles <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card fade-in-up" onclick="openModal('modal-5')" style="cursor: pointer;">
+                    <div class="project-header">
+                        <div class="project-icon">⚡</div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Automation</span>
+                    </div>
+                    <h3 class="project-title">Automatización de Reporting</h3>
+                    <p class="project-description">
+                        Desarrollo de pipeline automatizado que reduce el tiempo de generación
+                        de informes de <strong>3 horas a solo 5 minutos</strong>, eliminando
+                        errores manuales y liberando tiempo para análisis de valor añadido.
+                    </p>
+                    <div class="project-stats">
+                        <div class="project-stat">
+                            <i class="fas fa-clock project-stat-icon"></i>
+                            <span>98% tiempo ahorrado</span>
+                        </div>
+                        <div class="project-stat">
+                            <i class="fas fa-robot project-stat-icon"></i>
+                            <span>Automatización</span>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--glass-border); text-align: center; color: var(--color-accent-tertiary); font-weight: 600;">
+                        Ver detalles <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card fade-in-up" onclick="openModal('modal-6')" style="cursor: pointer;">
+                    <div class="project-header">
+                        <div class="project-icon">💎</div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">SQL</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">€500K+</span>
+                    </div>
+                    <h3 class="project-title">Análisis de Margen</h3>
+                    <p class="project-description">
+                        Análisis profundo de estructura de descuentos sobre 1.25M€ en ventas,
+                        identificando <strong>oportunidades de margen superiores a €500K</strong>
+                        mediante optimización de políticas comerciales y pricing estratégico.
+                    </p>
+                    <div class="project-stats">
+                        <div class="project-stat">
+                            <i class="fas fa-euro-sign project-stat-icon"></i>
+                            <span>+€500K oportunidad</span>
+                        </div>
+                        <div class="project-stat">
+                            <i class="fas fa-percentage project-stat-icon"></i>
+                            <span>Optimización</span>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--glass-border); text-align: center; color: var(--color-accent-tertiary); font-weight: 600;">
+                        Ver detalles <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card fade-in-up" onclick="openModal('modal-7')" style="cursor: pointer;">
+                    <div class="project-header">
+                        <div class="project-icon">👥</div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Tableau</span>
+                    </div>
+                    <h3 class="project-title">Customer Analytics</h3>
+                    <p class="project-description">
+                        Análisis de comportamiento de clientes con técnicas de
+                        segmentación y análisis de cohortes para
+                        mejorar retención y personalización de estrategias de marketing.
+                    </p>
+                    <div class="project-stats">
+                        <div class="project-stat">
+                            <i class="fas fa-users project-stat-icon"></i>
+                            <span>Segmentación</span>
+                        </div>
+                        <div class="project-stat">
+                            <i class="fas fa-chart-bar project-stat-icon"></i>
+                            <span>Cohortes</span>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--glass-border); text-align: center; color: var(--color-accent-tertiary); font-weight: 600;">
+                        Ver detalles <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card fade-in-up" onclick="openModal('modal-8')" style="cursor: pointer;">
+                    <div class="project-header">
+                        <div class="project-icon">🔮</div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">SQL</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Power BI</span>
+                    </div>
+                    <h3 class="project-title">Análisis Predictivo</h3>
+                    <p class="project-description">
+                        Modelo de predicción de reingresos hospitalarios,
+                        integrando ETL en SQL, procesamiento en Python y visualización
+                        en Power BI para decisiones clínicas basadas en datos.
+                    </p>
+                    <div class="project-stats">
+                        <div class="project-stat">
+                            <i class="fas fa-brain project-stat-icon"></i>
+                            <span>ML</span>
+                        </div>
+                        <div class="project-stat">
+                            <i class="fas fa-hospital project-stat-icon"></i>
+                            <span>Healthcare</span>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--glass-border); text-align: center; color: var(--color-accent-tertiary); font-weight: 600;">
+                        Ver detalles <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Perfil Profesional</span>
+                <h2 class="section-title">Sobre Mí</h2>
+                <p class="section-description">
+                    La precisión de la ciencia aplicada al crecimiento empresarial
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Mi Perfil</h3>
+                    <p>
+                        Soy un <strong>Analista de Datos</strong> con formación de doctorado en
+                        Ciencias Computacionales. Mi perfil es híbrido: combino el rigor analítico
+                        de un investigador con las habilidades técnicas de un ingeniero de datos.
+                    </p>
+                    <p>
+                        Mi especialidad es transformar datos brutos y complejos (+1M de registros)
+                        en insights accionables. Me apasiona no solo analizar los datos, sino
+                        construir y optimizar los procesos que los generan.
+                    </p>
+                    <p>
+                        En mis proyectos, he logrado reducir los tiempos de procesamiento de
+                        informes de horas a minutos y he desarrollado modelos que han identificado
+                        oportunidades de margen de más de <strong>+€500K</strong>.
+                    </p>
+
+                    <h3>Formación</h3>
+                    <ul class="education-list">
+                        <li class="education-item">
+                            <strong>Doctorando en Neurociencia</strong><br>
+                            Área de Neurociencia Computacional
+                        </li>
+                        <li class="education-item">
+                            <strong>Máster en Neurociencia Fundamental y Traslacional</strong><br>
+                            Área de Neurociencia Computacional
+                        </li>
+                        <li class="education-item">
+                            <strong>Graduado en Psicología</strong>
+                        </li>
+                    </ul>
+
+                    <h3>¿Por qué elegirme?</h3>
+                    <p>
+                        Soy el candidato ideal para un puesto de Analista de Datos en una empresa
+                        con un alto componente humano, dada mi formación en Psicología, ya que no
+                        solamente tengo conocimientos técnicos sobre el análisis de datos, sino
+                        que los combino con mis conocimientos sobre el comportamiento humano para
+                        dar una perspectiva única.
+                    </p>
+                    <p>
+                        Tengo capacidad para trabajar de manera independiente, por lo que no necesito
+                        supervisión constante. Además puedo adaptarme fácilmente a cualquier nuevo
+                        entorno o herramienta, por lo que estaré dando el 100% al poco tiempo de
+                        incorporarme.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="skills-category">
+                        <h4>SQL & Bases de Datos</h4>
+                        <div class="skills-list">
+                            <span class="skill-item">SQL Server</span>
+                            <span class="skill-item">PostgreSQL</span>
+                            <span class="skill-item">Query Optimization</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h4>Python - Modelado de Datos</h4>
+                        <div class="skills-list">
+                            <span class="skill-item">Pandas</span>
+                            <span class="skill-item">NumPy</span>
+                            <span class="skill-item">Scikit-Learn</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h4>Visualización de Datos</h4>
+                        <div class="skills-list">
+                            <span class="skill-item">Power BI</span>
+                            <span class="skill-item">Tableau</span>
+                            <span class="skill-item">Matplotlib</span>
+                            <span class="skill-item">Seaborn</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h4>Machine Learning & Big Data</h4>
+                        <div class="skills-list">
+                            <span class="skill-item">Azure ML</span>
+                            <span class="skill-item">Scikit-Learn</span>
+                            <span class="skill-item">PySpark</span>
+                            <span class="skill-item">Knime</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h4>Especialidades</h4>
+                        <div class="skills-list">
+                            <span class="skill-item">Automatización</span>
+                            <span class="skill-item">ETL Pipelines</span>
+                            <span class="skill-item">Visualización</span>
+                            <span class="skill-item">Modelado Predictivo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Conecta Conmigo</span>
+                <h2 class="section-title">Contacto</h2>
+            </div>
+
+            <div class="contact-content">
+                <p style="font-size: 1.125rem; color: var(--color-text-secondary); margin-bottom: 2rem;">
+                    ¿Interesado en trabajar juntos o tienes alguna pregunta?
+                    No dudes en ponerte en contacto conmigo.
+                </p>
+
+                <div class="contact-info">
+                    <a href="mailto:alex.consuegraaragon@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <span>alex.consuegraaragon@gmail.com</span>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/alejandro-consuegra-arag%C3%B3n-baa354246/" target="_blank"
+                        rel="noopener noreferrer" class="contact-item">
+                        <i class="fab fa-linkedin contact-icon"></i>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                </div>
+
+                <div class="contact-social">
+                    <a href="mailto:alex.consuegraaragon@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alejandro-consuegra-arag%C3%B3n-baa354246/" target="_blank"
+                        rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Alejandro Consuegra Aragón. Todos los derechos reservados.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                Hecho con <i class="fas fa-heart" style="color: var(--color-accent-pink);"></i>
+                y datos
+            </p>
+        </div>
+    </footer>
+
+    <!-- Project Modals -->
+    <!-- Modal 1: Benchmarking de Audiencias -->
+    <div id="modal-1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 class="modal-title">Dashboard de Audiencias Digitales</h2>
+                    <p class="modal-subtitle">Benchmarking Competitivo | Excel | Analytics</p>
+                </div>
+                <button class="modal-close" onclick="closeModal('modal-1')" aria-label="Cerrar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-highlight">
+                    <p><strong>Análisis de más de 70 medios digitales y 3 millones de visitas mensuales para evaluar el
+                            posicionamiento de DS4B frente al mercado</strong></p>
+                </div>
+
+                <div class="modal-metrics">
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">🌐</div>
+                        <div class="modal-metric-value">70+</div>
+                        <div class="modal-metric-label">Medios Analizados</div>
+                    </div>
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">👥</div>
+                        <div class="modal-metric-value">3M</div>
+                        <div class="modal-metric-label">Visitas Mensuales</div>
+                    </div>
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">📊</div>
+                        <div class="modal-metric-value">100%</div>
+                        <div class="modal-metric-label">Benchmarking</div>
+                    </div>
+                </div>
+
+                <h3><i class="fas fa-info-circle"></i> Descripción del Proyecto</h3>
+                <p>Dashboard interactivo para analizar el comportamiento de las audiencias digitales, comparando el
+                    rendimiento de la empresa DS4B (ficticia) frente a otras empresas del sector de medios de
+                    comunicación.</p>
+                <p>El objetivo principal es ofrecer una herramienta de análisis que permita a la organización evaluar su
+                    posicionamiento en el mercado digital, identificar fortalezas y oportunidades, y tomar decisiones
+                    estratégicas basadas en datos.</p>
+
+                <h3><i class="fas fa-database"></i> Fuentes de Datos</h3>
+                <div class="modal-section">
+                    <ul>
+                        <li><strong>ERP</strong>: Datos diarios por sección temática con indicadores como visitas y
+                            páginas vistas</li>
+                        <li><strong>OJD</strong>: Métricas de tráfico digital para comparaciones con el mercado</li>
+                        <li><strong>Base Integrada</strong>: Agregación de datos de DS4B a la base general</li>
+                    </ul>
+                </div>
+
+                <h3><i class="fas fa-chart-bar"></i> Estructura del Dashboard</h3>
+                <p><strong>Inicio:</strong> Análisis interno de DS4B con evolución del tráfico por sección y comparación
+                    con periodos anteriores.</p>
+                <p><strong>Dashboard Comparativa:</strong> Comparación directa entre DS4B y el mercado simulado con
+                    gráficos y tablas de participación relativa.</p>
+
+                <h3><i class="fas fa-cogs"></i> Metodología</h3>
+                <div class="modal-section">
+                    <ol>
+                        <li>Limpieza de datos: Homogeneización de nombres y estandarización de formatos</li>
+                        <li>Integración de fuentes: Consolidación de datos internos y externos</li>
+                        <li>Diseño visual: Tablas dinámicas y gráficos interactivos en Excel</li>
+                        <li>Automatización: Fórmulas y referencias dinámicas para actualización periódica</li>
+                    </ol>
+                </div>
+
+                <h3><i class="fas fa-trophy"></i> Valor del Proyecto</h3>
+                <p>Solución integral que combina visión interna con comparativa estratégica frente al mercado. Permite
+                    detectar tendencias, optimizar contenidos y tomar decisiones fundamentadas en datos, con enfoque
+                    realista de benchmarking competitivo.</p>
+
+                <h3><i class="fas fa-images"></i> Visualizaciones del Dashboard</h3>
+                <div class="modal-section">
+                    <img src="images/audiencias_img_1_1767812101388.png" alt="Dashboard de Audiencias Digitales"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/audiencias_img_2_1767812121012.png" alt="Análisis comparativo de audiencias"
+                        style="width: 100%; border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Dashboard de Rentabilidad -->
+    <div id="modal-2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 class="modal-title">Análisis de Rentabilidad Hotelera</h2>
+                    <p class="modal-subtitle">Tableau | Revenue Management</p>
+                </div>
+                <button class="modal-close" onclick="closeModal('modal-2')" aria-label="Cerrar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-highlight">
+                    <p><strong>Dashboard interactivo para analizar más de 3.000 registros operativos de un hotel a
+                            través de 6 indicadores clave de desempeño</strong></p>
+                </div>
+
+                <div class="modal-metrics">
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">📊</div>
+                        <div class="modal-metric-value">3K+</div>
+                        <div class="modal-metric-label">Registros Históricos</div>
+                    </div>
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">💰</div>
+                        <div class="modal-metric-value">6</div>
+                        <div class="modal-metric-label">KPIs Clave</div>
+                    </div>
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">📈</div>
+                        <div class="modal-metric-value">100%</div>
+                        <div class="modal-metric-label">ADR & RevPAR</div>
+                    </div>
+                </div>
+
+                <h3><i class="fas fa-info-circle"></i> Descripción</h3>
+                <p>Dashboard interactivo en Tableau para analizar el desempeño financiero y operativo de un hotel.
+                    Transformación de datos operativos en insights accionables mediante visualización clara y dinámica.
+                </p>
+
+                <h3><i class="fas fa-chart-line"></i> Métricas Analizadas</h3>
+                <div class="modal-section">
+                    <ul>
+                        <li><strong>Ingresos totales</strong> y por tipo de habitación</li>
+                        <li><strong>Tasa de ocupación</strong> (%)</li>
+                        <li><strong>ADR</strong> (Average Daily Rate)</li>
+                        <li><strong>RevPAR</strong> (Revenue per Available Room)</li>
+                        <li><strong>Costos operativos</strong> por área funcional</li>
+                        <li><strong>Beneficio neto</strong></li>
+                    </ul>
+                </div>
+
+                <h3><i class="fas fa-cogs"></i> Enfoque y Desarrollo</h3>
+                <p>Base de datos con +3.000 registros históricos incluyendo información sobre reservas, ocupación,
+                    tarifas promedio (ADR), ingresos generados, costos operativos desglosados por departamento, y
+                    beneficio neto mensual.</p>
+
+                <h3><i class="fas fa-lightbulb"></i> Resultados e Insights</h3>
+                <div class="modal-section">
+                    <p>Se detectaron periodos con <strong>alta ocupación pero baja rentabilidad</strong>, evidenciando
+                        oportunidades de optimización en costos.</p>
+                    <p>Diferencias importantes entre ingresos por tipo de habitación y variaciones en ADR que
+                        permitieron evaluar la estrategia de precios.</p>
+                    <p>El desglose de costos reveló desviaciones significativas en ciertas áreas operativas, clave para
+                        implementar acciones de control y eficiencia.</p>
+                </div>
+
+                <h3><i class="fas fa-images"></i> Dashboard Tableau</h3>
+                <div class="modal-section">
+                    <img src="images/rentabilidad_img_1_1767812157984.png"
+                        alt="Dashboard Tableau de Rentabilidad Hotelera" style="width: 100%; border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Sistema Recomendador -->
+    <div id="modal-3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 class="modal-title">Sistema Recomendador con SQL</h2>
+                    <p class="modal-subtitle">SQL | Análisis de Ventas</p>
+                </div>
+                <button class="modal-close" onclick="closeModal('modal-3')" aria-label="Cerrar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-highlight">
+                    <p><strong>Optimización de modelo de ventas con +113.000 registros y desarrollo de sistema de
+                            recomendación aplicando SQL avanzado</strong></p>
+                </div>
+
+                <div class="modal-metrics">
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">🗄️</div>
+                        <div class="modal-metric-value">113K+</div>
+                        <div class="modal-metric-label">Registros Procesados</div>
+                    </div>
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">🎯</div>
+                        <div class="modal-metric-value">80/20</div>
+                        <div class="modal-metric-label">Análisis Pareto</div>
+                    </div>
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">🤝</div>
+                        <div class="modal-metric-value">Item-Item</div>
+                        <div class="modal-metric-label">Recomendación</div>
+                    </div>
+                </div>
+
+                <h3><i class="fas fa-info-circle"></i> Descripción</h3>
+                <p>Análisis y transformación de base de datos relacional de ventas para optimizarla para Business
+                    Intelligence y desarrollar un sistema de recomendación personalizado.</p>
+
+                <h3><i class="fas fa-database"></i> Enfoque y Desarrollo</h3>
+                <div class="modal-section">
+                    <h4>Limpieza y Agregación</h4>
+                    <p>Transformación de tabla ventas, conversión de fechas a tipo DATE y agregación por tienda,
+                        producto, canal y fecha. Campo calculado de facturación (cantidad * precio_oferta).</p>
+
+                    <h4>Modelado Relacional</h4>
+                    <p>Claves primarias y foráneas para vincular con productos, tiendas y canales, generando modelo
+                        entidad-relación completo.</p>
+
+                    <h4>Segmentación de Clientes</h4>
+                    <p>Clasificación de tiendas en cuatro grupos (P+F+, P-F-, etc.) según número de pedidos y
+                        facturación, identificando clientes estratégicos y oportunidades.</p>
+
+                    <h4>Sistema de Recomendación</h4>
+                    <p>Recomendador basado en técnica <strong>item-item</strong>, que sugiere productos no adquiridos
+                        pero altamente relacionados a partir del historial de cada tienda.</p>
+                </div>
+
+                <h3><i class="fas fa-chart-bar"></i> Métricas Principales</h3>
+                <ul>
+                    <li>Facturación total y por canal</li>
+                    <li>Número de pedidos por tienda</li>
+                    <li>Segmentación de clientes según pedidos y facturación</li>
+                    <li>Identificación de productos con alto impacto en ventas</li>
+                    <li>Recomendaciones personalizadas de productos</li>
+                </ul>
+
+                <h3><i class="fas fa-images"></i> Análisis SQL</h3>
+                <div class="modal-section">
+                    <img src="images/logistica_img_1_1767812183948.png" alt="Análisis SQL de productos"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/logistica_img_2_1767812243089.png" alt="Sistema recomendador SQL"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/logistica_img_3_1767812257862.png" alt="Análisis de combinaciones de productos"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/logistica_img_4_1767812278692.png" alt="Resultados del sistema recomendador"
+                        style="width: 100%; border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Inteligencia de Negocio -->
+    <div id="modal-4" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 class="modal-title">Dashboard de Ventas y Logística</h2>
+                    <p class="modal-subtitle">Power BI | Business Intelligence | DAX</p>
+                </div>
+                <button class="modal-close" onclick="closeModal('modal-4')" aria-label="Cerrar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-highlight">
+                    <p><strong>Dashboard interactivo en Power BI con +65.000 registros y modelado DAX avanzado para
+                            optimización comercial y logística</strong></p>
+                </div>
+
+                <div class="modal-metrics">
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">📦</div>
+                        <div class="modal-metric-value">65K+</div>
+                        <div class="modal-metric-label">Pedidos Analizados</div>
+                    </div>
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">📄</div>
+                        <div class="modal-metric-value">5</div>
+                        <div class="modal-metric-label">Páginas Dashboard</div>
+                    </div>
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">⚡</div>
+                        <div class="modal-metric-value">32</div>
+                        <div class="modal-metric-label">Variables Clave</div>
+                    </div>
+                </div>
+
+                <h3><i class="fas fa-info-circle"></i> Contexto</h3>
+                <p>Dashboard en Power BI basado en datos transaccionales de ERP de ventas. Base de datos con +65.000
+                    registros de pedidos con 32 variables como fechas, márgenes, clientes, segmentos, productos y
+                    ubicaciones.</p>
+
+                <h3><i class="fas fa-chart-bar"></i> Componentes del Dashboard</h3>
+                <div class="modal-section">
+                    <h4>1. Visión General</h4>
+                    <p>Panorámica ejecutiva del rendimiento comercial con KPIs de ventas y margen, evolución temporal, y
+                        filtros por año y segmento.</p>
+
+                    <h4>2. Análisis de Clientes</h4>
+                    <p>Comportamiento por segmento (Consumer, Corporate, Home Office), ubicación y tipo de pedido.
+                        Incluye mapa de distribución geográfica.</p>
+
+                    <h4>3. Análisis de Producto</h4>
+                    <p>Productos y categorías más vendidos y rentables. Ranking de productos y análisis por sección con
+                        árbol de categorías.</p>
+
+                    <h4>4. Desempeño Logístico</h4>
+                    <p>Evaluación de eficiencia de entrega y cumplimiento de pedidos.</p>
+
+                    <h4>5. Análisis Temporal</h4>
+                    <p>Tendencias y patrones a lo largo del tiempo.</p>
+                </div>
+
+                <h3><i class="fas fa-code"></i> Medidas DAX Destacadas</h3>
+                <div class="modal-section">
+                    <p><code>Total Ventas = SUM(Pedidos[Cantidad])</code></p>
+                    <p><code>Margen % = DIVIDE(SUM(Pedidos[Margen]), SUM(Pedidos[Cantidad]))</code></p>
+                    <p><code>Ventas por Segmento = CALCULATE([Total Ventas], ALLEXCEPT(Pedidos, Pedidos[Segmento del cliente]))</code>
+                    </p>
+                    <p><code>Top Categoría = RANKX(ALL(Pedidos[Categoría]), [Total Ventas])</code></p>
+                </div>
+
+                <h3><i class="fas fa-images"></i> Dashboards Power BI</h3>
+                <div class="modal-section">
+                    <img src="images/rrhh_img_1_1767812345296.png" alt="Dashboard Power BI - Recursos Humanos"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/rrhh_img_2_1767812435272.png" alt="Análisis de ventas y logística"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/rrhh_img_3_1767812459197.png" alt="Métricas operativas"
+                        style="width: 100%; border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Automatización de Reporting -->
+    <div id="modal-5" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 class="modal-title">Automatización de Reporting</h2>
+                    <p class="modal-subtitle">Python | Gmail API | Automation</p>
+                </div>
+                <button class="modal-close" onclick="closeModal('modal-5')" aria-label="Cerrar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-highlight">
+                    <p><strong>Automatización completa de generación y envío de informes comerciales personalizados
+                            mediante Python y Gmail API</strong></p>
+                </div>
+
+                <div class="modal-metrics">
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">⏱️</div>
+                        <div class="modal-metric-value">98%</div>
+                        <div class="modal-metric-label">Tiempo Ahorrado</div>
+                    </div>
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">👥</div>
+                        <div class="modal-metric-value">20+</div>
+                        <div class="modal-metric-label">Agentes/Día</div>
+                    </div>
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">✅</div>
+                        <div class="modal-metric-value">100%</div>
+                        <div class="modal-metric-label">Tasa de Éxito</div>
+                    </div>
+                </div>
+
+                <h3><i class="fas fa-info-circle"></i> Descripción</h3>
+                <p>Sistema de automatización completa del proceso de generación y envío de informes diarios a agentes
+                    comerciales. Reducción drástica del tiempo dedicado al reporting: <strong>de 2-3 horas a 5
+                        minutos</strong>.</p>
+
+                <h3><i class="fas fa-cogs"></i> Flujo de Trabajo</h3>
+                <div class="modal-section">
+                    <h4>1. Procesamiento de Datos (Pandas)</h4>
+                    <ul>
+                        <li>Lectura de archivos Excel con registros por agente</li>
+                        <li>Unificación y limpieza de archivos</li>
+                        <li>Filtrado dinámico por agente</li>
+                        <li>Cálculo de métricas: llamadas, ventas, visitas, % conversión</li>
+                    </ul>
+
+                    <h4>2. Detección de Errores</h4>
+                    <p>Identificación de información faltante y comunicación automática a trabajadores para completar
+                        datos.</p>
+
+                    <h4>3. Generación de Informes</h4>
+                    <p>Reporte general automatizado enviado al jefe de planta una vez por semana con días de ejecución,
+                        número de paneles y potencia contratada.</p>
+
+                    <h4>4. Envío Automatizado (Gmail API)</h4>
+                    <p>Conexión a Gmail con OAuth 2.0, correos personalizados por agente con archivos adjuntos.</p>
+                </div>
+
+                <h3><i class="fas fa-trophy"></i> Resultados Clave</h3>
+                <div class="modal-section">
+                    <ul>
+                        <li><strong>Reducción de tiempo:</strong> De 2-3h manuales a 5 minutos automáticos</li>
+                        <li><strong>Errores eliminados:</strong> Duplicidad, envíos incorrectos, omisiones</li>
+                        <li><strong>Tasa de éxito:</strong> 100% en envíos</li>
+                        <li><strong>Procesamiento:</strong> +20 agentes/día</li>
+                        <li><strong>Frecuencia:</strong> Ejecución programada diaria</li>
+                    </ul>
+                </div>
+
+                <h3><i class="fas fa-code"></i> Tecnologías</h3>
+                <p>pandas, openpyxl, google-auth, google-api-python-client, Gmail API v1, OAuth 2.0</p>
+
+                <h3><i class="fas fa-images"></i> Automatización en Acción</h3>
+                <div class="modal-section">
+                    <img src="images/python_img_1_1767812558639.png" alt="Código Python de automatización"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/python_img_2_1767812589976.png" alt="Gmail API integration"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/python_img_3_1767812621112.png" alt="Sistema de reporting automático"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/python_img_4_1767812661449.png" alt="Resultados de la automatización"
+                        style="width: 100%; border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Análisis de Margen -->
+    <div id="modal-6" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 class="modal-title">Análisis de Margen y Descuentos</h2>
+                    <p class="modal-subtitle">SQL | Python | Excel | €500K+ Oportunidad</p>
+                </div>
+                <button class="modal-close" onclick="closeModal('modal-6')" aria-label="Cerrar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-highlight">
+                    <p><strong>Análisis multi-herramienta de 12M€ en ventas y 1.25M€ en descuentos, identificando +€500K
+                            en oportunidades de margen</strong></p>
+                </div>
+
+                <div class="modal-metrics">
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">💎</div>
+                        <div class="modal-metric-value">€500K+</div>
+                        <div class="modal-metric-label">Oportunidad Identificada</div>
+                    </div>
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">💰</div>
+                        <div class="modal-metric-value">€12M</div>
+                        <div class="modal-metric-label">Ventas Analizadas</div>
+                    </div>
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">📊</div>
+                        <div class="modal-metric-value">€1.25M</div>
+                        <div class="modal-metric-label">Descuentos</div>
+                    </div>
+                </div>
+
+                <h3><i class="fas fa-info-circle"></i> Descripción</h3>
+                <p>Análisis profundo de estructura de descuentos revelando que 1.25M€ en descuentos carecían de
+                    políticas claras, con variaciones hasta del 15% para clientes similares afectando la rentabilidad.
+                </p>
+                <p>En categorías con márgenes altos (30+%), se aplicaban descuentos del 8-12% sin justificación,
+                    reduciendo significativamente los beneficios operativos.</p>
+
+                <h3><i class="fas fa-cogs"></i> Metodología (3 Fases)</h3>
+                <div class="modal-section">
+                    <h4>1. Análisis Exploratorio (SQL)</h4>
+                    <ul>
+                        <li>Descuentos por cliente: ¿Mayor volumen = mayores descuentos?</li>
+                        <li>Consistencia entre comerciales: ¿Variabilidad injustificada?</li>
+                        <li>Relación margen-descuento: ¿Productos alto margen = descuentos bajos?</li>
+                    </ul>
+
+                    <h4>2. Transformación de Datos (Python)</h4>
+                    <ul>
+                        <li>Conexión a MySQL mediante SQLAlchemy</li>
+                        <li>Unificación de tablas en DataFrame de Pandas</li>
+                        <li>Exportación a Excel para dashboard</li>
+                    </ul>
+
+                    <h4>3. Dashboard de Control (Excel)</h4>
+                    <ul>
+                        <li>KPIs principales: Ventas (€12.3M) vs descuentos (€1.25M)</li>
+                        <li>Tendencias mensuales y correlaciones</li>
+                        <li>Alertas para comerciales/clientes con desviaciones</li>
+                    </ul>
+                </div>
+
+                <h3><i class="fas fa-lightbulb"></i> Resultados e Insights</h3>
+                <div class="modal-section">
+                    <ul>
+                        <li><strong>Inconsistencias Críticas:</strong>
+                            <ul>
+                                <li>20% de descuentos sin criterios de volumen o margen</li>
+                                <li>Variabilidad del 15% en tasas entre comerciales similares</li>
+                            </ul>
+                        </li>
+                        <li><strong>Oportunidades:</strong>
+                            <ul>
+                                <li><strong>Ajustar descuentos</strong> en categorías alto margen podría aumentar
+                                    beneficio un
+                                    8%</li>
+                                <li><strong>Estandarizar políticas</strong> comerciales para eliminar inconsistencias
+                                </li>
+                                <li><strong>Optimizar pricing</strong> estratégico basado en datos</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3><i class="fas fa-code"></i> Tecnologías</h3>
+                <p>SQL Server, Python (SQLAlchemy, Pandas), Excel avanzado (Tablas dinámicas, Power Query)</p>
+
+                <h3><i class="fas fa-images"></i> Análisis Detallado</h3>
+                <div class="modal-section">
+                    <img src="images/margen_img_1_1767812710641.png" alt="Análisis de margen por producto"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/margen_img_2_1767812742811.png" alt="Oportunidades identificadas +€500K"
+                        style="width: 100%; border-radius: 8px;">
+                </div>
+                <h3><i class="fas fa-check-circle"></i> Impacto</h3>
+                <p>Enfoque end-to-end desde SQL hasta visualización ejecutiva. Impacto medible con modelado del efecto
+                    financiero de las recomendaciones: <strong>+€500K en oportunidades de margen</strong>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7: Customer Analytics -->
+    <div id="modal-7" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 class="modal-title">Customer Analytics</h2>
+                    <p class="modal-subtitle">Python | Tableau | Segmentación | Cohortes</p>
+                </div>
+                <button class="modal-close" onclick="closeModal('modal-7')" aria-label="Cerrar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-highlight">
+                    <p><strong>Análisis de comportamiento de clientes con técnicas de segmentación y análisis de
+                            cohortes</strong></p>
+                </div>
+
+                <div class="modal-metrics">
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">🎯</div>
+                        <div class="modal-metric-value">4+</div>
+                        <div class="modal-metric-label">Segmentos Clave</div>
+                    </div>
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">📊</div>
+                        <div class="modal-metric-value">RFM</div>
+                        <div class="modal-metric-label">Análisis</div>
+                    </div>
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">📈</div>
+                        <div class="modal-metric-value">LTV</div>
+                        <div class="modal-metric-label">Lifetime Value</div>
+                    </div>
+                </div>
+
+                <h3><i class="fas fa-info-circle"></i> Descripción</h3>
+                <p>Proyecto de análisis del comportamiento de clientes utilizando técnicas de segmentación y
+                    análisis de cohortes para mejorar la retención y personalización de
+                    estrategias de marketing.</p>
+
+                <h3><i class="fas fa-chart-bar"></i> Técnicas Aplicadas</h3>
+                <div class="modal-section">
+                    <h4>Segmentación RFM</h4>
+                    <p>Análisis de Recencia, Frecuencia y Valor Monetario para identificar clientes de alto valor y
+                        patrones de compra.</p>
+
+                    <h4>Análisis de Cohortes</h4>
+                    <p>Seguimiento de grupos de clientes a lo largo del tiempo para entender retención y comportamiento
+                        de compra.</p>
+
+                    <h4>Customer Lifetime Value (CLV)</h4>
+                    <p>Cálculo del valor a largo plazo de cada cliente para optimizar inversión en adquisición y
+                        retención.</p>
+
+
+                </div>
+
+                <h3><i class="fas fa-lightbulb"></i> Insights Clave</h3>
+                <div class="modal-section">
+                    <ul>
+                        <li>Identificación de <strong>clientes de alto valor</strong> para programas VIP</li>
+                        <li>Patrones de recompra para <strong>optimización de inventario</strong></li>
+                        <li>Segmentos en riesgo de abandono para <strong>campañas de retención</strong></li>
+                        <li>Oportunidades de <strong>cross-selling y upselling</strong> por segmento</li>
+                    </ul>
+                </div>
+
+                <h3><i class="fas fa-code"></i> Tecnologías</h3>
+                <p>Python (Pandas, NumPy), Tableau, SQL, Análisis RFM, Análisis de Cohortes, Modelado de Lifetime
+                    Value</p>
+
+                <h3><i class="fas fa-images"></i> Análisis y Visualizaciones</h3>
+                <div class="modal-section">
+                    <img src="images/customer_img_1_1767812821214.png" alt="Contexto del proyecto Customer Analytics"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/customer_img_2_1767812855280.png" alt="Metodología Python y análisis RFM"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/customer_img_3_1767812899928.png" alt="Código de segmentación en Python"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/customer_img_4_1767812938744.png" alt="Dashboard Tableau - Vista general"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/customer_img_5_1767813104825.png" alt="Dashboard RFM en Tableau"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/customer_img_6_1767813181709.png" alt="Análisis de cohortes"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/customer_img_7_1767813356710.png" alt="Dashboard operativo RFM"
+                        style="width: 100%; border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8: Análisis Predictivo Hospitalario -->
+    <div id="modal-8" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 class="modal-title">Análisis Predictivo Hospitalario</h2>
+                    <p class="modal-subtitle">SQL | Python | Power BI</p>
+                </div>
+                <button class="modal-close" onclick="closeModal('modal-8')" aria-label="Cerrar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-highlight">
+                    <p><strong>Análisis de 3 años de datos clínicos: +1.200 admisiones mensuales, 20.57% reingresos y
+                            €1.04M coste anual</strong></p>
+                </div>
+
+                <div class="modal-metrics">
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">🏥</div>
+                        <div class="modal-metric-value">1.2K</div>
+                        <div class="modal-metric-label">Admisiones/Mes</div>
+                    </div>
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">⚕️</div>
+                        <div class="modal-metric-value">20.57%</div>
+                        <div class="modal-metric-label">Tasa Reingresos</div>
+                    </div>
+                    <div class="modal-metric">
+                        <div class="modal-metric-icon">💰</div>
+                        <div class="modal-metric-value">€1.04M</div>
+                        <div class="modal-metric-label">Coste Anual</div>
+                    </div>
+                </div>
+
+                <h3><i class="fas fa-info-circle"></i> Descripción</h3>
+                <p>Modelo de predicción de reingresos hospitalarios en cardiología, integrando
+                    ETL en SQL, procesamiento y scoring en Python, y visualización en Power BI.</p>
+
+                <h3><i class="fas fa-database"></i> Procesamiento de Datos (Python)</h3>
+                <div class="modal-section">
+                    <ul>
+                        <li>Conexión a MySQL con SQLAlchemy y pymysq</li>
+                        <li>Integración de tablas: pacientes, admisiones, diagnósticos, factores de riesgo, laboratorio
+                        </li>
+                        <li>Corrección de valores incoherentes en estancias</li>
+                        <li>Creación de variable "reingreso"</li>
+                        <li><strong>Scoring clínico</strong> (0-10) evaluando riesgo de reingreso</li>
+                    </ul>
+                </div>
+
+                <h3><i class="fas fa-chart-bar"></i> Dashboard Power BI</h3>
+                <div class="modal-section">
+                    <h4>Página 1: Admisiones</h4>
+                    <ul>
+                        <li>Evolución mensual de admisiones</li>
+                        <li>Estancia media hospitalaria y en UCI</li>
+                        <li>Distribución de diagnósticos principales</li>
+                        <li>Flujo entre admisión y alta</li>
+                    </ul>
+
+                    <h4>Página 2: Pacientes y Reingresos</h4>
+                    <ul>
+                        <li>Nº pacientes únicos y tasa mortalidad (5.7%)</li>
+                        <li>Distribución género (61.9% hombres) y edad</li>
+                        <li>Scoring medio reingreso (2.7/10)</li>
+                        <li>Pacientes scoring ≥8 (alto riesgo)</li>
+                        <li>Coste total reingresos: €1.04M</li>
+                    </ul>
+                </div>
+
+                <h3><i class="fas fa-lightbulb"></i> Insights Clave</h3>
+                <div class="modal-section">
+                    <ul>
+                        <li><strong>Carga asistencial:</strong> 612 admisiones en marzo 2024 (+3.2% vs mes anterior)
+                        </li>
+                        <li><strong>Estancia media:</strong> 6.3 días, descenso 8.1% en UCI</li>
+                        <li><strong>Diagnósticos frecuentes:</strong> Insuficiencia cardiaca (12.8%), ICFER (12.4%),
+                            ICFEN (12.2%)</li>
+                        <li><strong>Reingresos:</strong> 35.8% admisiones, afectando 40.3% pacientes</li>
+                        <li><strong>Pacientes críticos:</strong> 12% con scoring ≥8, mayor riesgo</li>
+                    </ul>
+                </div>
+
+                <h3><i class="fas fa-check-circle"></i> Impacto y Escalabilidad</h3>
+                <div class="modal-section">
+                    <p><strong>Impacto económico:</strong> Reingresos suponen >€1M anuales</p>
+                    <p><strong>Valor operativo:</strong> Scoring permite priorizar recursos y seguimiento post-alta</p>
+                    <p><strong>Escalabilidad:</strong> Modelo puede extenderse a otras unidades clínicas</p>
+                </div>
+
+                <h3><i class="fas fa-images"></i> Análisis y Dashboards</h3>
+                <div class="modal-section">
+                    <img src="images/hospital_img_1_1767813468419.png" alt="Descripción del proyecto hospitalario"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/hospital_img_2_1767813549804.png" alt="Datos y metodología"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/hospital_img_3_1767813596673.png" alt="Análisis SQL de reingresos"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/hospital_img_4_1767813669027.png" alt="Lógica de scoring en Python"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/hospital_img_5_1767813767375.png" alt="Dashboard Power BI - Cardiología"
+                        style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="images/hospital_img_6_1767813849112.png" alt="Dashboard Power BI - Análisis completo"
+                        style="width: 100%; border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
