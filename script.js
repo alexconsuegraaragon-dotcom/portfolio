@@ -49,7 +49,7 @@ function handleNavbarScroll() {
 
 // Smooth Scroll for Navigation Links
 function initSmoothScroll() {
-    const navLinks = document.querySelectorAll('.nav-links a');
+    const navLinks = document.querySelectorAll('.sidebar-nav .nav-links a');
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -58,17 +58,17 @@ function initSmoothScroll() {
             const targetSection = document.querySelector(targetId);
 
             if (targetSection) {
-                const navbarHeight = document.getElementById('navbar').offsetHeight;
-                const targetPosition = targetSection.offsetTop - navbarHeight;
+                const headerHeight = document.querySelector('.dashboard-header').offsetHeight;
+                const targetPosition = targetSection.offsetTop - headerHeight;
 
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
                 });
 
-                // Close mobile menu if open
-                const navLinksContainer = document.getElementById('navLinks');
-                navLinksContainer.classList.remove('active');
+                // Update active state manually for immediate feedback
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
             }
         });
     });
@@ -153,14 +153,14 @@ function initSkillBadges() {
 // Active Navigation Link Highlighting
 function updateActiveNavLink() {
     const sections = document.querySelectorAll('.section');
-    const navLinks = document.querySelectorAll('.nav-links a');
+    const navLinks = document.querySelectorAll('.sidebar-nav .nav-links a');
 
     let currentSection = '';
 
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        const scrollPosition = window.scrollY + 100;
+        const scrollPosition = window.scrollY + 150;
 
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
             currentSection = section.getAttribute('id');
@@ -222,34 +222,69 @@ function throttle(func, wait) {
 
 // Initialize all features when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    // Start typing animation
-    typeText();
-
     // Initialize smooth scroll
     initSmoothScroll();
-
-    // Initialize mobile menu
-    initMobileMenu();
-
-    // Initialize scroll animations
-    initScrollAnimations();
 
     // Initialize interactive elements
     initProjectCards();
     initSkillBadges();
+
+    // Handle Theme Toggle (Default is now Light, Toggles to Dark)
+    const themeToggle = document.querySelector('.theme-toggle');
+    if (themeToggle) {
+        // Initial state check
+        const icon = themeToggle.querySelector('i');
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            if (document.body.classList.contains('dark-theme')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+            }
+        });
+    }
+
+    // Mobile Sidebar Toggle
+    const mobileMenuBtn = document.createElement('button');
+    mobileMenuBtn.className = 'mobile-menu-btn';
+    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    document.querySelector('.dashboard-header').prepend(mobileMenuBtn);
+
+    const sidebar = document.getElementById('sidebar');
+
+    mobileMenuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        sidebar.classList.toggle('active');
+    });
+
+    // Close sidebar when clicking outside on mobile
+    document.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768 &&
+            sidebar.classList.contains('active') &&
+            !sidebar.contains(e.target) &&
+            !mobileMenuBtn.contains(e.target)) {
+            sidebar.classList.remove('active');
+        }
+    });
+
+    // Close sidebar when clicking a link on mobile
+    document.querySelectorAll('.sidebar-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                sidebar.classList.remove('active');
+            }
+        });
+    });
 
     // Reveal sections on scroll
     revealSections();
 
     // Add scroll event listeners (throttled for performance)
     window.addEventListener('scroll', throttle(() => {
-        handleNavbarScroll();
         updateActiveNavLink();
         handleParallax();
     }, 100));
-
-    // Initial navbar state
-    handleNavbarScroll();
 });
 
 // Add CSS for active nav link (inject dynamically)
@@ -291,9 +326,9 @@ window.addEventListener('load', () => {
 });
 
 // Console easter egg for recruiters 😊
-console.log('%c👋 Hola! Soy Alejandro', 'font-size: 20px; font-weight: bold; color: #6366f1;');
-console.log('%c¿Interesado en trabajar juntos?', 'font-size: 14px; color: #8b5cf6;');
-console.log('%c📧 alex.consuegraaragon@gmail.com', 'font-size: 12px; color: #06b6d4;');
+console.log('%c👋 Hola! Soy Alejandro', 'font-size: 20px; font-weight: bold; color: #10b981;');
+console.log('%c¿Interesado en trabajar juntos?', 'font-size: 14px; color: #3b82f6;');
+console.log('%c📧 alex.consuegraaragon@gmail.com', 'font-size: 12px; color: #f59e0b;');
 console.log('%c✨ Este portfolio fue diseñado con atención al detalle', 'font-size: 10px; color: #a1a1aa;');
 
 // ============================================
